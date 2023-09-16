@@ -1,4 +1,9 @@
 from selenium import webdriver
 import time
 
-okno_chrom1 = webdriver.Chrome()
+driver = webdriver.Chrome()
+driver.get('https:/google.com')
+
+time.sleep(1)
+
+driver.quit()
