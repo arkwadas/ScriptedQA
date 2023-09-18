@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support import expected_conditions as excon
-from Selenium2 import make_screenshot
+from Selenium2 import make_screenshot # importowanie z pliku chce się uruchomić zawsze, żeby teo uniktnąć trzeba dodać do selenium 2 warunek if __name__ == '__main__':
 
 def czekaj_na_id(element_id):
     timeout = 5
@@ -16,13 +16,14 @@ def czekaj_na_id(element_id):
 driver = webdriver.Chrome()
 driver.get('https://www.saucedemo.com/')
 
-try:
-    login_button = czekaj_na_id('login-buttond')
-except TimeoutException:
+try: #wykonaj tray
+    login_button = czekaj_na_id('login-button')
+except TimeoutException: #wykonaj except
     print('Nie znaleziono')
     raise
-else:
+else: #jeżeli Ci sie nie uda except to zrób else
     print('znaleziono')
-finally:
+finally: # fykonaj na samym końcu niezależnie od w/w
+
     make_screenshot(driver)
     driver.quit()

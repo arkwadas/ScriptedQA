@@ -27,11 +27,12 @@ if __name__ == '__main__':
     username_field.clear()
     username_field.send_keys('standard_user')
 
-    try:
+    try: # spróbuj coś zrobić
         password_field = driver.find_element(By.XPATH,'//*[@id="password"]')
-    except NoSuchElementException:
+    except NoSuchElementException: #niech napisze że nie znaleziono jeżeli try nie wyjdzie
         make_screenshot(driver)
         print('Nie znaleziono pola z haslem')
+        # password_field = driver.find_element(By.XPATH,'//*[@id="password2"]') Zeniech spróbuje po tym znaleźć
         raise
 
     username_field.clear()

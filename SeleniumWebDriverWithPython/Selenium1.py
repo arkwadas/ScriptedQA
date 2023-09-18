@@ -18,7 +18,7 @@ time.sleep(1)
 textarea_googleFinder.send_keys('Koduj z pythonem')
 textarea_googleFinder.send_keys(Keys.RETURN)
 
-driver.get_screenshot_as_file('zrzutekranu.png')
+driver.get_screenshot_as_file('Selenium01.png')
 
 time.sleep(1)
 

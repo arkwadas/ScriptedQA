@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../SeleniumWithPython/.idea/SeleniumScript.iml" filepath="$PROJECT_DIR$/../SeleniumWithPython/.idea/SeleniumScript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SeleniumWebDriverWithPython/.idea/SeleniumScript.iml" filepath="$PROJECT_DIR$/../SeleniumWebDriverWithPython/.idea/SeleniumScript.iml" />
     </modules>
   </component>
 </project>
